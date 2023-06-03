@@ -28,44 +28,48 @@
 
         <!-- Header -->
 
-        <ul class="nav pt-3 pb-3 d-flex justify-content-between bg-light">
+        <div class="row pt-3 pb-3 d-flex bg-light">
 
             <!-- Instagram Logo -->
 
-            <li class="nav-item d-flex">
-                <a class="nav-link active me-0 pe-0 text-dark" aria-current="page" href="#">
-                    <i class="fa-brands fa-instagram fa-xl"></i>
-                </a>
-                <a class="nav-link ms-1 ps-1 pt-1 text-dark" href="#">
-                    <h2 class="fs-4">Instagram</h2>
-                </a>
-            </li>
+            <div class="col px-5">
+                <div class="d-flex align-items-center">
+                    <a class="d-inline-flex text-decoration-none" href="index.html">
+                        <i class="fa-brands fa-instagram fa-xl text-dark pt-3"></i>
+                        <h2 class="ms-2 pt-1 text-dark fs-5">Instagram</h2>
+                    </a>
+                </div>
+            </div>
 
-            <!-- Buttons Create a New Post and Dropdown -->
+            <!--Create a New Post Button -->
 
-            <li class="nav-item d-flex">
-                <a class="nav-link me-0 pe-0" href="#">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="col px-5">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Create a New Post
-                    </button> </a>
-                <a class="nav-link ps-3" href="#">
-                    <div class="dropdown">
+                    </button>
+
+                    <!--Dropdown Button -->
+
+                    <div class="dropdown ml-4">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-sharp fa-solid fa-gear" style="color: #ffffff;"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#"> Privacy and Data</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                         </ul>
                     </div>
-            </li>
-
-        </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- Modal for Create a New Post Button -->
-
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -75,7 +79,8 @@
                     </div>
                     <div class="modal-body">
                         <h5>Caption:</h5>
-                        <input type="text" class="form-control pb-5" placeholder="Add the caption of your post here">
+                        <textarea class="form-control" rows="2"
+                            placeholder="Add the caption of your post here"></textarea>
                         <button class="btn btn-outline-secondary py-1 px-2.5 p">
                             <i class="fa-solid fa-camera"></i>
                             <button class="btn btn-outline-secondary m-2 ml-2 py-1 px-2.5">
@@ -104,182 +109,62 @@
             </div>
         </div>
 
-        <!-- First Row One Image Grid -->
+        <!-- First Row of Images of the Grid -->
 
-        <div class="row-12 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">Somewhere</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">01/10</h4>
+        <div class="row p-1">
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/308/425" alt="">
                 </div>
-                <img src="https://picsum.photos/id/16/300/200" class="card-img-top  rounded-0  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>3004 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
+            </div>
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/12/425" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="mb-1 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/17/425" alt="">
                 </div>
             </div>
         </div>
 
-        <!-- Second Row One Image Grid -->
+        <!-- Second Row of Images of the Grid -->
 
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">Somewhere Again</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">02/10</h4>
+        <div class="row p-1">
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/56/425" alt="">
                 </div>
-                <img src="https://picsum.photos/id/12/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>2004 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
+            </div>
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/45/425" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/90/425" alt="">
                 </div>
             </div>
         </div>
 
-        <!-- Tird Row One Image Grid -->
+        <!-- Third Row of Images of the Grid -->
 
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">The Correct Path</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">03/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/17/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>1000 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
+        <div class="row p-1">
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/106/425" alt="">
                 </div>
             </div>
-        </div>
-
-        <!-- Fourth Row One Image Grid -->
-
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">Shining</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">04/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/56/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>200 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/82/425" alt="">
                 </div>
             </div>
-        </div>
-
-        <!-- Fifth Row One Image Grid -->
-
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">The Correct Ride</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">05/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/45/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>1500 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sixth Row One Image Grid -->
-
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">Our Place</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">06/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/90/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>4008 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Seveth Row One Image Grid -->
-
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">Your Favorite Color</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">07/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/106/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>790 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Eighth Row One Image Grid -->
-
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">My Favorite Color</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">08/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/82/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>555 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Ninth Row One Image Grid -->
-
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">Our Favorite Flower</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">09/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/152/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>2354 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tenth Row One Image Grid -->
-
-        <div class="row-12 my-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 40rem;">
-                <div class="d-flex justify-content-between">
-                    <h3 class="col-6 my-1 p-3 text-start">Being Reborn</h3>
-                    <h4 class="col-6 my-1 p-3 text-end">10/10</h4>
-                </div>
-                <img src="https://picsum.photos/id/253/300/200" class="card-img-top  rounded-0" alt="...">
-                <div class="card-body">
-                    <h4><b>789 Likes</b></h4>
-                    <p class="card-text">I love spending time traveling and this is one of the most beautiful landscapes
-                        that I've seen.</p>
+            <div class="col-4">
+                <div class="mb-2 d-flex justify-content-center">
+                    <img src="https://picsum.photos/id/152/425" alt="">
                 </div>
             </div>
         </div>
